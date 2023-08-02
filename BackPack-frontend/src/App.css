@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(5,182,195); */
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+nav li a.dropdown-item:hover{
+    background-color: rgb(155, 155, 155);
+}
+nav li a.dropdown-item:active{
+    background-color: rgb(110, 110, 110);
+    color: black;   
+}
+
+/* //navbar dropdown btn */
+.menuBtn[aria-expanded=false] .fa-caret-up {
+    display: none;
+}
+
+.menuBtn[aria-expanded=true] .fa-caret-down {
+    display: none;
+}
+
+/* //Forms */
+#college,#college:focus,#college:active{
+    border: none;
+    outline: none;
+}
+
+.form-floating input{
+    font-size: calc(1.1rem - .1vw);
+    color: rgba(1, 90, 72, 0.822);
+}
+
+#sideimage {
+    animation: sideimageanimation 4s infinite;
+}
+
+@keyframes sideimageanimation {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+.btnBg{
+    background-color: rgb(5 220 218);
+    color: "#161515"    
+}
+
+.btnBg:active {
+    background-color: rgb(5, 172, 169);
+}
+
+/* // Input image */
+.fileInpBtn::file-selector-button{
+    display: none;
+}
+
+.fileInpBtn{
+    width: calc(.5rem + 8vw);
+}
+
+.fileInpStyleBtn{
+    padding: 7px;
+    border: 1px solid rgb(1, 91, 89);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(18, 81, 80);
+    color: white;
+}
+
+.fileInpStyleBtn:active{
+    background-color: rgb(1, 121, 119);
+}
+
+/* //footer */
+.footer-span{
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    padding: calc(.5rem - .3vw) calc(.5rem);
+    margin: 0 calc(.3rem + .2vw);
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+    color: black;
+    box-shadow: 0 0 5px rgb(232, 232, 232);
+}
+/* style={{position:'absolute',right:'calc(1.5rem + 1vw)',bottom:'4rem',background:'rgb(0 152 127)',borderRadius:'50%',padding:'.5rem .7rem',cursor:'pointer */
+#gototoparrow{
+    position: absolute;
+    right: calc(1rem + 1.5vw);
+    bottom:2rem;
+    background-color: rgb(1, 113, 117);
+    border-radius: 50%;
+    padding: calc(.4rem + .1vw) calc(.5rem + .2vw)  calc(.1rem + .2vw) calc(.5rem + .2vw);
+    cursor: pointer;
+}
+#gototoparrow:active{
+    background-color: rgb(1, 89, 92);
+}
+
+/* //transaction */
+.transactionNavbarBtn{
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+/* // contactus thankyoudiv */
+#thankyouDiv{
+    animation: scale .5s ease-out 1;
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

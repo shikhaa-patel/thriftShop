@@ -1,0 +1,67 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+::-webkit-scrollbar{
+   width: 0;
+   background: transparent;
+}
+
+.btn-width
+{
+   width: 8vw;
+   font-size: calc(1vw + .4rem);
+   font-weight: medium;
+}
+
+/***Hero**/
+
+.hero-container
+{
+   max-width: 100vw;
+   width:100vw;
+   padding: 0;
+   background-color: rgb(5 182 195 / 62%);
+}
+
+.hero-text-div
+{
+   transform: translateX(2.5rem);
+   padding-top: 7%;
+}
+
+.lottie-col
+{
+   padding-right: 0;
+}
+
+@media (min-width:720px) {
+   .auser{
+      position: absolute;
+      right: 10rem;
+    }
+}
+@media (max-width : 600px)
+{
+    .hero-container
+    {
+      padding-top: 7rem;
+    }
+    .lottie-col{
+      transform: translate(3rem,1rem);
+    }
+    .heroBtn{
+      transform: translateY(-1rem);
+    }
+} 
+@media (max-width : 550px)
+{
+    .hero-container
+    {
+      /* padding-left: 2rem; */
+      padding-top: 6rem;
+      padding-right: 2rem;
+    }
+}
